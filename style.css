@@ -1,0 +1,412 @@
+h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+p {
+    font-family: 'Roboto Slab', sans-serif;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0960a6;
+    border-color: #0960a6;
+}
+.collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar-brand {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 40px;
+    color: #0960a6;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 20px;
+}
+.nav-item a{
+    text-decoration: none;
+    position: relative;
+}
+.nav-item a:before{
+    content: "";
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition: 0.3s;
+}
+.nav-item a:hover:before{
+    width: 100%;
+}
+.intro-img {
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.order {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.list-counter-circle {
+    list-style: none;
+    counter-reset: list;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.list-counter-circle>li {
+    position: relative;
+    display: block;
+    line-height: 2rem;
+    margin-left: 1.75rem;
+    margin-bottom: .25rem;
+    padding-left: 1rem;
+    padding-right: .5rem;
+    color: #fff;
+    background: #0960a6;
+    border-radius: .25rem
+}
+.list-counter-circle>li:last-child {
+    margin-bottom: 0;
+}
+.list-counter-circle>li::before {
+    content: counter(list);
+    counter-increment: list;
+    position: absolute;
+    left: -2rem;
+    top: -.25rem;
+    bottom: -.25rem;
+    width: 2.5rem;
+    line-height: 2rem;
+    border-radius: 1.25rem;
+    border: .25rem solid #fff;
+    text-align: center;
+    color: #fff;
+    background: #0960a6;
+}
+.carousel {
+    position: relative;
+    margin-bottom: 100px;
+}
+.carousel-control-prev {
+    left: -130px;
+}
+.carousel-control-next {
+    right: -130px;
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -60px;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+}
+.card-body {
+    flex: 1 1 auto;
+    flex-direction: column;
+    display: flex;
+    padding: 1rem 1rem;
+    justify-content: space-between;
+}
+/* Контакты*/
+.contacts {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.contacts h3 {
+    text-align: center;
+}
+.contacts p {
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(9,96,166,0.5);
+    border-radius: 20px;
+    padding: 20px 20% 20px 20%;
+    text-align: center;
+}
+/* О театре*/
+.nav-about{
+    margin: 0;
+    padding: 20px 0 20px 0;
+    width: 20%;
+    background-color: #0960a6;
+    min-height: 500px;
+}
+.nav-about ul{
+    margin: 0;
+    padding: 0;
+}
+.nav-about li{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-about a{
+    padding: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    width: auto;
+    text-align: center;    
+    transition: 0.4s;
+}
+.nav-about a:hover{
+    color: #0960a6;
+    background-color: #fff;
+    border: 0 solid #fff;
+    border-radius: 5px;
+}
+.container-about {
+    display: flex;
+}
+/* История */
+.section {
+    display: flex;
+}
+.content {
+    width: 80%;
+}
+.content-rules {
+    width: 80%;
+}
+.content-rules h1{
+    text-align: center;
+}
+.content-rules h6{
+    text-align: center;
+}
+.content-rules p{
+    margin: 20px;
+}
+.p-center {
+    text-align: center;
+}
+.year {
+    margin: 10px;
+    font-size: 30px;
+}
+.history-text {
+    margin: 10px;
+}
+.justify{
+    text-align: justify;
+}
+/* Среда */
+.environment-image {
+    margin: 50px 20px 20px 20px;
+    transition: 0.4s;
+    height: 151px; 
+    width: 274px;
+}
+.environment-image:hover {
+    transform: scale(2.3);
+}
+.environment-image-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20%;
+    margin-top: 100px;
+    flex-direction: column;
+}
+/* Афиша */
+.poster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #0960a6;
+    height: 308px;
+}
+.poster:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+    border-bottom: 3px solid #fff;
+}
+.poster img{
+    height: 308px;
+    width: 218px;
+    border-radius: 10px;
+}
+.poster-body {
+    width: 50%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+}
+/* спектакль */
+.description-head {
+    display: flex;
+    margin: 20px 0 20px 0;
+    flex-wrap: nowrap;
+    font-size: 14px;
+}
+.description-body {
+    text-align: center;
+    color: #fff;
+    background-color: #0960a6;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+.description-head img{
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: auto; 
+    left:0; 
+    right:0;
+    width: 33%;
+}
+.roles {    
+    width: 33%;
+    padding-right: 10px;
+}
+.staff {    
+    width: 33%;
+}
+.roles ul{
+    list-style-type: none;
+    text-align: left;
+}
+.staff ul{
+    list-style-type: none;
+    text-align: right;
+    float:right;
+}
+/* Коллектив */
+.collective:first-child {
+    margin: 120px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.collective {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.collective-art{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.collective .card{
+    margin: 0 20px 40px 0;
+    padding: 0;
+}
+.collective-art .card{
+    margin: 0 20px 40px 0;
+    padding: 0;
+}
+.collective .carousel-control-next {
+    right: -100px;
+}
+/* Футер */
+footer {
+    position: relative;
+    background-color: #fff;
+    padding-top: 35px;
+    height: 150px;
+    border-top: 2px solid #0960a6;
+    display: flex;
+    flex-wrap: nowrap;
+}
+footer img {
+    float: left;
+}
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer p:first-child{
+    padding-left: 20px;
+}
+.address {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.links a{
+    display: inline-block;
+    border-left: 2px solid black;
+    text-decoration: none;
+    color: black;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.links a:first-child {
+    border: none;
+}
+.phones {
+    text-align: right;
+}
+
+@media screen and (max-width: 1024px){
+    .description-head img{
+        height: 308px;
+        width: 218px;
+    }
+    .roles ul{
+        list-style-type: none;
+        font-size: 10px;
+    }
+    .staff ul{
+        list-style-type: none;
+        text-align: right;
+        font-size: 10px;
+    }
+    .collective .row {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1400px){
+    .carousel-inner .col {
+        width: 200px;
+        display: flex;
+    }
+    .carousel-inner .card {
+        height: 555px;
+    }
+    .actors-carousel .col {
+        width: 200px;
+        display: flex;
+    }
+    .actors-carousel .card {
+        height: 260px;
+    }
+    .collective .row {
+        justify-content: center;
+    }
+}
